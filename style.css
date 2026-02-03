@@ -8,7 +8,8 @@ body {
     background-color: #000000; /* Pure black like the screenshot */
     color: #ffffff;
     font-family: 'Inter', sans-serif;
-    -webkit-font-smoothing: antialiased;
+    /* -webkit-font-smoothing: antialiased; */
+    overflow-x: hidden;
 }
 
 /* 1. Navigation */
@@ -19,7 +20,7 @@ body {
     position: sticky;
     top: 0;
     background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(100px);
     z-index: 100;
 }
 
@@ -30,26 +31,43 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    
+}
+
+.logo-container1{
+    display: flex;
 }
 
 .logo {
     /* font-weight: 700; */
-    font-size: 20px;
-    letter-spacing: 1px;
+    /* font-size: 20px; */
+    /* letter-spacing: 1px; */
     cursor: pointer;
+    display: flex;
+    height:15px;
+    width: 15px;
+    margin-top: 13px;
+    /* margin-right: 703px; */
+}
+.icon{    
+    display: flex;
+    height: 45px;
+    width: 45px;
+    /* margin-bottom: 50px; */
+    
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 25px;
+    margin-right: 50px;
 }
 
 .nav-links a {
     color: #ced4da;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 15px;
     transition: color 0.2s;
 }
 
@@ -103,6 +121,11 @@ body {
     /* margin: 0 auto; */
     /* text-align: left; */
 }
+.hero-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .p-text{
     padding-top: 60px;
@@ -153,4 +176,59 @@ body {
 @media (max-width: 768px) {
     .hero p { font-size: 36px; }
     .nav-links { display: none; }
+}
+
+.trusted-p{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.logo-grid{
+    /* background-color: #0e0e0e;    */
+    display: flex;
+    gap: 7px;
+    padding: 20px;
+    min-width: 100vw;
+     
+}
+.logo-item{
+   height: 40px;
+   width: 165px;
+   display: flex;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;  
+    height: 60px;
+    width: 158px;
+    padding: 40px;
+    border-radius: 5px;
+}
+.highlights{
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    gap: 10px;
+    background-color: #0e0e0e; 
+}
+.highlight-text{
+    display: flex;
+    align-items: center;
+    background-color: #1f1d1d; 
+    height: 150px;
+    width: 700px;   
+    border-radius: 5px;
+    text-align: start;
+    padding: 12px;
+}
+.highlights-section{
+    display: flex;
+    flex-direction: column;
 }
